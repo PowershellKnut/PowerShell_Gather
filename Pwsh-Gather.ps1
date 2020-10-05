@@ -248,6 +248,7 @@ function Get-NetworkInfo {
                 }
             }
         }
+        
         # Get Domain information
         $_.DNSDomain -split ',' | Select-Object -First '1' | ForEach-Object {
             if ($_ -ne $null) {
